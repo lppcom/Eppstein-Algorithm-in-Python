@@ -359,7 +359,6 @@ def main():
             break
         print cost, sol
     #draw_graph(graph)
-    return e    
     
 if __name__ == "__main__":
     main()
