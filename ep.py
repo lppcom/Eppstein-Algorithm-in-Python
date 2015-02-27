@@ -3,7 +3,8 @@
 #
 #  ep.py
 #  author: Srinath
-#  Elance Profile: https://www.elance.com/s/edit/fantasticcoder/
+#  Elance Profile: https://www.elance.com/s/fantasticcoder/, https://www.elance.com/s/nighthawkcoder/
+#  skype: americakart
 #  Email: americakart@gmail.com
 #  Copyright 2015 Srinath R <americakart@gmail.com>
 #  
@@ -204,9 +205,6 @@ class EppsteinShortestPathAlgorithm(object):
         graph.add_node(children, index=children,node_info=node_info)
         graph.add_edge(root, children)
         
-    def get_root_children_indices(self, info):
-        root, children = None, None
-        return root, children
     def _build_path_tree(self,source='s', path=[], sidetrack_edges=set(), prev_sigma_e=0, current_vertex=0,visited_edges=set()):
         for edge in sidetrack_edges:
             if self.__is_valid_sidetrack_edge(path=path, edge=edge, ):
