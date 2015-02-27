@@ -1,3 +1,28 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#
+#  ep.py
+#  author: Srinath
+#  Elance Profile: https://www.elance.com/s/edit/fantasticcoder/
+#  Email: americakart@gmail.com
+#  Copyright 2015 Srinath R <americakart@gmail.com>
+#  
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#  
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#  
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+#  MA 02110-1301, USA.
+#
+# 
 import networkx as nx
 from heapq import heappush, heappop
 import copy
@@ -13,6 +38,8 @@ logging.basicConfig(filename = 'eppstein.log', level = logging.DEBUG)
 total_edges_counter = 0
 
 
+
+
 def draw_graph(G):
     pos = nx.circular_layout(G)
     nx.draw_networkx_nodes(G, pos, node_size = 700)
@@ -23,7 +50,7 @@ def draw_graph(G):
     plt.show()
 
 class EppsteinShortestPathAlgorithm(object):
-
+    
     def __init__(self, graph, source ='s', destination ='t'):
         self._G = graph
         self.path_tree = []
